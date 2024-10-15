@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 body {
     height: 100vh;
@@ -21,7 +21,6 @@ body {
     transform-style: preserve-3d;
     perspective: 1000px;
     /* transform: rotateX(30deg) rotateY(30deg); */
-
     animation: rotate-cube 15s infinite linear;
 }
 
@@ -36,7 +35,7 @@ body {
 }
 
 .side.back {
-    background: green;
+    background: orange;
     transform: translateZ(-150px);
 }
 
@@ -46,7 +45,7 @@ body {
 }
 
 .side.left {
-    background: aqua;
+    background: green;
     transform: translateX(-150px) rotateY(90deg);
 }
 
@@ -56,25 +55,25 @@ body {
 }
 
 .side.bottom {
-    background: pink;
+    background: gray;
     transform: translateY(150px) rotateX(90deg);
 }
 
 
 @keyframes rotate-cube {
     0% {
-        transform: rotateX(45deg) rotateY(45deg);
+        transform: rotateX(0deg) rotateY(0deg);
     }
     25% {
-        transform: rotateX(-45deg) rotateY(45deg);
+        transform: rotateX(180deg) rotateY(0deg);
     }
     50% {
-        transform: rotateX(-45deg) rotateY(-45deg);
-    }
+        transform: rotateX(180deg) rotateY(180deg);
+    } 
     75% {
-        transform: rotateX(45deg) rotateY(-45deg);
+        transform: rotateX(360deg) rotateY(180deg);
     }
     100% {
-        transform: rotateX(45deg) rotateY(45deg);
+        transform: rotateX(360deg) rotateY(360deg);
     }
 }
