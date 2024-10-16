@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 300px;
+    width: 200px;
+    position: relative;
+    border-radius: 20px;
+    border: 1px solid red;
+    transition: transform 0.5s;
+}
+
+.card .front,
+.card .back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: 20px;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.card .front {
+    background-color: hsl(260, 78%, 64%);
+}
+
+.card .back {
+    background-color: hsl(17, 78%, 64%);
+    transform: rotateY(180deg);
+
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
