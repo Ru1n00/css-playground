@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: bolder;
+    background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.l7v-cnxAUPjR5BHt-hEIDgHaE8%26pid%3DApi&f=1&ipt=da463abdc9a6ad2ac9d4f41118f2f0e605b82a770dab01f615f6ba6c7cac685c&ipo=images");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+}
